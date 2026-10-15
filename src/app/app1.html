@@ -1,0 +1,32 @@
+<h1>To-Do List</h1>
+<input type="text"  [value]="title()" (input)="title.set($event.target.value)" placeholder="enter task">
+<button style="margin-left: 5px;" (click)="addTask()">Add task</button>
+
+<ul>
+@for(task of tasks();track task.id){
+    <li class="task-list">
+        <span>{{$index+1}}</span>
+        <span>{{task.title}}</span>
+        <span><button (click)="deleteTask(task.id)">delete</button></span>
+    </li>
+}
+@empty {
+    <span>No task found</span>
+}
+</ul>
+
+
+<hr/>
+<br/>
+
+
+<h1>Directives in Angular</h1>
+
+<h2 *ngIf="isLogin1()">Welcome User</h2> 
+<div>
+    <ul *ngFor="let employee of employees()">
+         <li>{{employee}}</li>
+    </ul>
+</div>
+
+<p [ngStyle]="{color:pColor}">Hello visitor</p>

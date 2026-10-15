@@ -1,0 +1,32 @@
+.btn{
+    background-color: gray;
+    padding: 8px 12px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.btn-primary{
+    background-color: rgb(45, 45, 235);
+}
+
+.btn-primary:hover{
+    background-color: rgb(57, 57, 151);
+}
+
+.btn-warning{
+    background-color: red;
+}
+
+.btn-warning:hover{
+    background-color: rgb(228, 92, 92);
+}
+
+.btn-success{
+    background-color: green;
+}
+
+.btn-success:hover{
+    background-color: rgb(156, 205, 156);
+}
