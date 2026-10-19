@@ -10,9 +10,11 @@ import { SearchBox } from './search-box/search-box';
 import { Child } from './child/child';
 import { DisplayCount } from './display-count/display-count';
 import { ControlCount } from './control-count/control-count';
+import { TrimTextPipe } from './custom-pipe/trim-text-pipe';
+import { CurrencyConverterPipe } from './custom-pipe/currency-converter-pipe';
 
 @Component({
-  imports: [RouterOutlet,Profile,Login,Register,FormsModule,CommonModule,NgFor,SearchBox,Child,DisplayCount,ControlCount],
+  imports: [RouterOutlet,Profile,Login,Register,FormsModule,CommonModule,NgFor,SearchBox,Child,DisplayCount,ControlCount,TrimTextPipe,CurrencyConverterPipe],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
@@ -278,7 +280,10 @@ export class App {
 
 
 
+   title1 = signal("Angular working This tutorial by code step by step")
+   school = signal("Sanskar Bharti niketan ")
 
+   price = signal(20)
 }
 
    

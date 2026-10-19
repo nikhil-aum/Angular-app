@@ -283,4 +283,17 @@
 
 <hr>
 <h2>{{user() | json}}</h2>
+
+
+<hr>
+
+<h1>{{title1() | trimText | uppercase}}</h1>
+<h1>{{school() | trimText:5}}</h1>
+<h1>{{school() | trimText:12}}</h1>
+
+<hr>
+<h3>{{price() | currencyConverter | currency:'INR'}}</h3>
+<h3>{{price() | currencyConverter:30 | currency:'INR'}}</h3>
+<h3>{{price() | currencyConverter:120 | currency:'INR'}}</h3>
+
  
